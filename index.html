@@ -7,7 +7,51 @@ Implement HTML5 validation to ensure that only valid email addresses are accepte
 Provide a submit button to allow users to submit their email addresses.
 
 -->
+<!DOCTYPE html>
 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>Register for The Egg Event!</h3>
+        <div>
+            <!--Task 1: Implementing Email Input-->
+            <form action="input" method="post">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Enter e-mail here">
+                <button type="submit">Submit</button>
+            </form>
+             <!--Task 2: Implementing Number Input-->
+            <form action="input" method="post">
+                <label for="eggs">Enter number of eggs: </label>
+                <input type="number" id="eggs" name="eggs" step="12" min="12" max="144">
+                <button type="submit">Submit</button>
+            </form>
+             <!--Task 3: Implementing Date Input-->
+            <form action="input" method="post">
+                <label for="event-start">Date of Egg Event:</label>
+                <input type="date" id="event-start" name="event-start"  min="2025-01-01" max="2025-12-31" />
+                <button type="submit">Submit</button>
+            </form>
+             <!--Task 4: Implementing Range Input-->
+            <form action="input" method="post">
+                <input type="range" id="volume" name="volume" min="0" max="100" value="50" step="10" />
+                <label for="volume">Music Volume: </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div>
+            
+          </div>
+  
+    </body>
+</html>
 <!--
 Task 2: Utilizing Number Input
 
